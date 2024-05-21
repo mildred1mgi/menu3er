@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #add8e6;
+}
+
+body h1{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: teal;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menuu{
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuu a{
+    text-decoration: none;
+}
+
+.cont {
+    background-color: beige;
+    width: 90%;
+    height: calc(100%/3);
+}
+
+.one, .two, .three{
+    background-position: center;
+    background-size: cover;
+    filter: grayscale();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.one{ 
+background-image: url(./imagenes/pochacco.PNG);
+}
+
+
+
+.two{
+background-image: url(./imagenes/pochacco.PNG);
+}
+
+
+.three{
+background-image: url(./imagenes/pochacco.PNG);
+}
+
+
+.one{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.three{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.one, .two, .three{
+    transition: height 0.7s;
+    transition: ease-out 0.7s;
+}
+
+.cont:hover{
+    transition: height 0.7s;
+    height: 400%;
+    filter: grayscale(0);
+    transition: ease-in 0.7s;
+    border: 3Px rgb(34, 0, 255) solid;
+}
